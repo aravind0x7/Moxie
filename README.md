@@ -37,8 +37,8 @@ Moxie is a bash script designed for penetration testing MQTT IoT devices. It pro
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/moxie.git
-cd moxie
+git clone https://github.com/aravind0x7/Moxie.git
+cd Moxie
 ```
 
 2. Make the script executable:
