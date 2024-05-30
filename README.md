@@ -69,7 +69,7 @@ chmod +x moxie.sh
 
 ## Credits
 
-- Created by [Your Name](https://github.com/yourusername)
+- Created by [Your Name](https://aravind0x7.in)
 
 ## License
 
