@@ -103,11 +103,14 @@ display_usage() {
 # Main function
 main() {
     echo -e "${blue}"
-    echo "  __  __      _   _           _     _ "
-    echo " |  \/  | ___| |_| |__   __ _| |_  / |"
-    echo " | |\/| |/ _ \ __| '_ \ / _' | __| | |"
-    echo " | |  | |  __/ |_| | | | (_| | |_  | |"
-    echo " |_|  |_|\___|\__|_| |_|\__,_|\__| |_|"
+    echo "  ___  __________   _______ _____  "
+    echo "  |  \/  |  _  \ \ / /_   _|  ___|"
+    echo "  | .  . | | | |\ V /  | | | |__   "
+    echo "  | |\/| | | | |/   \  | | |  __|  "
+    echo "  | |  | \ \_/ / /^\ \_| |_| |___  "
+    echo "  \_|  |_/\___/\/   \/\___/\____/  "
+    echo "         The MQTT Pentester    "
+    echo "         Author: aravind0x7    "
     echo -e "${reset}"
 
     if [ $# -eq 0 ]; then
