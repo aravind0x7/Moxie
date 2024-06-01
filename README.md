@@ -1,4 +1,4 @@
-# Moxie - MQTT Recon Tool
+# Moxie - MQTT Pentest Tool
 
 ![Moxie - MQTT Recon Tool](moxie.gif)
 
@@ -69,7 +69,7 @@ chmod +x moxie.sh
 
 ## Credits
 
-- Created by [Your Name](https://aravind0x7.in)
+- Created by [aravind0x7](https://aravind0x7.in)
 
 ## License
 
