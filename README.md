@@ -26,12 +26,6 @@ Moxie is a bash script designed for penetration testing MQTT IoT devices. It pro
 - `-b, --bruteforce`: Conduct brute-force attack.
 - `-h, --help`: Display help message.
 
-## Requirements
-
-- **mosquitto_pub**: MQTT client tool for publishing messages.
-- **Nmap**: Network scanner tool for advanced scanning.
-- **parallel**: Utility for executing shell commands in parallel.
-
 ## Installation
 
 1. Clone the repository:
