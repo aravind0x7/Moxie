@@ -35,26 +35,10 @@ advanced_scan() {
     port=$2
     
     echo -e "${blue}Performing advanced scan using nmap...${reset}"
-    sudo nmap -p $port -sS -sV -sC $ip -v
+    sudo nmap -p $port -sS -sV -sC -A -Pn -vv --script mqtt-subscribe $ip
+
 }
 
-# Function to perform parallel scanning of common ports
-parallel_scan() {
-    ip=$1
-    
-    echo -e "${blue}Performing parallel scanning of common ports...${reset}"
-    if ! command -v parallel &> /dev/null; then
-        echo -e "${yellow}Error: parallel command not found. Please install it.${reset}"
-        exit 1
-    fi
-
-    if [ ! -f common_ports.txt ]; then
-        echo -e "${yellow}Error: common_ports.txt file not found.${reset}"
-        exit 1
-    fi
-
-    parallel -j 0 "sudo nmap -p {1} -sS -sV -sC $ip -v" ::: $(cat common_ports.txt)
-}
 
 # Function to perform brute-force attack
 brute_force_attack() {
@@ -91,7 +75,7 @@ brute_force_attack() {
 # Function to display tool usage
 display_usage() {
     echo -e "${bold}Usage:${reset}"
-    echo -e "  mqtt-recon.sh <option> [ip] [port]"
+    echo -e "  moxie.sh <option> [ip] [port]"
     echo
     echo -e "${bold}Options:${reset}"
     echo "  -c, --check         Check MQTT service"
@@ -110,6 +94,7 @@ main() {
     echo "  | |  | \ \_/ / /^\ \_| |_| |___  "
     echo "  \_|  |_/\___/\/   \/\___/\____/  "
     echo "         The MQTT Pentester    "
+    echo "                               "
     echo "         Author: aravind0x7    "
     echo -e "${reset}"
 
