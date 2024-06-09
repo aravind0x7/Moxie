@@ -10,7 +10,6 @@ Moxie is a bash script designed for penetration testing MQTT IoT devices. It pro
 
 - **MQTT Service Check**: Checks if MQTT service is accessible on a specified IP address and port.
 - **Advanced Scan**: Performs an advanced scan using Nmap to gather detailed information about the MQTT service.
-- **Parallel Scan**: Conducts parallel scanning of common ports to identify potential MQTT service instances.
 - **Brute-force Attack**: Attempts to brute-force the authentication of the MQTT service using provided username and password wordlists.
 
 ## Usage
